@@ -10,4 +10,4 @@ def renderHome():
 if __name__ == "__main__":
     #print ("the name is The MAIN")
     #app.run(host='0.0.0.0',debug=True)  #for running within a private network
-    app.run(debug=True)
+    app.run(host='0.0.0.0',debug=True)
