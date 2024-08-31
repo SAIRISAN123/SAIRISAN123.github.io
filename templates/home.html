@@ -1,76 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
+
+
         <title> Home Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
         <style>
-            h1 {
-                
-                font-family: verdana;
-                font-size: 300%;
-                font-weight: bold ;
-                color : rgb(80,80,80);
-                text-align: center;
-            }
 
-            h2 {
-                
-                font-family: verdana;
-                font-size: 200%;
-                font-weight: normal ;
-                color : rgb(20,20,20);
-                text-align: center;
-            }
-
-            .bodytext {
-                
-                font-family: verdana;
-                color : rgb(70,70,70);
-                font-size: 100%;
-            }
-
-            .copyright {
-                font-family: verdana;
-                color : rgb(70,70,70);
-                font-size: 80%;
-            }
-
-
-            #banner {
-                #width:320px;
+            #banner 
+            {
+                height: 500px;
                 width: 100%;
-                object-fit: cover; # use to fit the image
-                #object-fit: contain; # use to fit the image
+                object-fit: cover;
             }
-            
-            #container {
-                max-width: 1000px;
-                margin: 0 auto 0 auto;
-            }
-            
-
-
  
-
         </style>
 
     </head>
 
     <body>
-        <div id="container">
-            <h1>Stealth Careers</h1>
-            <img id ="banner" src="static\job_openings.jpg" height="320" alt="HTML Dog">
-            <h2>About Stealth </h2>
-            <p class="bodytext">The emergence of stealth IT companies represents a significant trend in the technology sector, often characterized by their low profile and innovative approaches. These organizations typically operate under the radar, focusing on developing groundbreaking technologies without revealing their strategic intentions to the public or competitors. The recent job openings in such companies indicate a burgeoning demand for skilled professionals who are adept at navigating the complexities of cutting-edge IT solutions. Job opportunities in stealth are shown below.</p>
+
+        <div class="container">
+        
+            <h1 class="text-center mt-4 mb-4">Stealth Careers</h1>
+            <img id ="banner" class="img-fluid"  src="static\job_openings.jpg" height="320" alt="HTML Dog">
+            <h2 class="text-center mt-4 mb-3">About Stealth </h2>
+            <p class="lead">The emergence of stealth IT companies represents a significant trend in the technology sector, often characterized by their low profile and innovative approaches. These organizations typically operate under the radar, focusing on developing groundbreaking technologies without revealing their strategic intentions to the public or competitors. The recent job openings in such companies indicate a burgeoning demand for skilled professionals who are adept at navigating the complexities of cutting-edge IT solutions. Job opportunities in stealth are shown below.</p>
 
 
-            <h2> Open Positions</h2>
-            <p class= "bodytext"> TODO - Show Jobs title here <p>
+            <h2 class="text-center mt-4"> Open Positions</h2>
+            <p class="text-center"> TODO - Show Jobs title here <p>
 
-            <div style = "text-align:center" >
-            <button> Contact Us </button>
-            <p class = "copyright"> Copyright @2024, Stealth <p>         
-            </div>   
-
+            
+            <button type="button" class="btn btn-primary btn-sm"> Contact Us </button>
+            <p> Copyright @2024, Stealth <p>         
+            
         </div>
+        
     </body>
 </html>
