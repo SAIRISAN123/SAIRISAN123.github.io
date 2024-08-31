@@ -25,18 +25,30 @@
 
         <div class="container">
         
-            <h1 class="text-center mt-4 mb-4">Stealth Careers</h1>
+            <h1 class="text-center mt-4 mb-4">{{companyName}} Careers</h1>
             <img id ="banner" class="img-fluid"  src="static\job_openings.jpg" height="320" alt="HTML Dog">
             <h2 class="text-center mt-4 mb-3">About Stealth </h2>
             <p class="lead">The emergence of stealth IT companies represents a significant trend in the technology sector, often characterized by their low profile and innovative approaches. These organizations typically operate under the radar, focusing on developing groundbreaking technologies without revealing their strategic intentions to the public or competitors. The recent job openings in such companies indicate a burgeoning demand for skilled professionals who are adept at navigating the complexities of cutting-edge IT solutions. Job opportunities in stealth are shown below.</p>
 
 
-            <h2 class="text-center mt-4"> Open Positions</h2>
-            <p class="text-center"> TODO - Show Jobs title here <p>
+            <h2 class="text-center mt-4 mb-4"> Open Positions</h2>
+           
+            <div> 
+                
+                
+                {%for job in jobs%}
 
-            
-            <button type="button" class="btn btn-primary btn-sm"> Contact Us </button>
-            <p> Copyright @2024, Stealth <p>         
+                {% include "jobitems.html" %}
+
+                {% endfor %}
+
+
+            </div>
+
+            <div class="text-center">
+            <button type="button" class="btn btn-primary btn-sm mt-2"> Contact Us </button>
+            <p class="mt-2"> Copyright @2024, Stealth <p>         
+            </div>
             
         </div>
         
