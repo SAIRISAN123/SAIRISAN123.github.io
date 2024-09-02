@@ -26,12 +26,20 @@ JOBS = [
 
 
 @app.route("/careers")
+def renderCareerPage():
+    return render_template("careers.html", jobs=JOBS, companyName="Stealth")
+
+@app.route("/")
 def renderHome():
     return render_template("home.html", jobs=JOBS, companyName="Stealth")
 
-@app.route("/api/jobs")
-def send_job():
-    return jsonify(JOBS)
+@app.route("/hybridFarm")
+def renderAboutHybridFarm():
+    return render_template("hybridFarm.html", companyName="Stealth")
+
+# @app.route("/api/jobs")
+# def send_job():
+#     return jsonify(JOBS)
 
 
 if __name__ == "__main__":

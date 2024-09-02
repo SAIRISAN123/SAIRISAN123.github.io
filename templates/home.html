@@ -1,61 +1,165 @@
 <!DOCTYPE html>
 <html>
     <head>
-
-
-        <title> Home Page</title>
+        <title>Home Page</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
         <style>
-
-            #banner 
-            {
+            #banner {
                 height: 500px;
                 width: 100%;
                 object-fit: cover;
             }
- 
+            .custom-h1 {
+                font-size: 4rem; /* Adjust the size as needed */
+            }
+
+
+
+
+            
+
+
         </style>
 
-    </head>
 
+
+    </head>
     <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg" style="background-color: rgb(200,200,200);">
+            <a class="navbar-brand" style="color:black" href="/"> <img src="static/nvarLogo.png" alt="Logo" style="width: 35px; height: 30px; margin-right: 0px margin-bottom: 0px;">Stealth</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:black" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:black" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:black" href="#games">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:black" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:black" href="#contact">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:black" href="/careers">Careers</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
         <div class="container">
+            <h1 class="text-center mt-4 mb-4 custom-h1">Welcome to Stealth</h1>
+            <img id="banner" class="img-fluid" src="static/StealthLogo.png" height="200" alt="Stealth Logo">
+
+       
+        <!-- Features Section -->
+         <!---
+            <section id="features" class="mt-5">
+                <h2 class="text-center mt-5 mb-5"  style="font-size: 3rem;" >Features</h2>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img src="static/feature1.png" class="img-fluid" alt="Feature 1">
+                        <h4>Feature 1</h4>
+                        <p>Details about feature 1.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="static/feature2.png" class="img-fluid" alt="Feature 2">
+                        <h4>Feature 2</h4>
+                        <p>Details about feature 2.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="static/feature3.png" class="img-fluid" alt="Feature 3">
+                        <h4>Feature 3</h4>
+                        <p>Details about feature 3.</p>
+                    </div>
+                </div>
+            </section>               -->
         
-            <h1 class="text-center mt-4 mb-4 ">{{companyName}} Careers</h1>
-            <img id ="banner" class="img-fluid"  src="static\job_openings.jpg" height="320" alt="HTML Dog">
-            <h2 class="text-center mt-4 mb-3">About Stealth </h2>
-            <p class="lead">Stealth pioneers digital innovation, offering digital solutions. Our vision focuses on leveraging advanced
-                engineering to revolutionize diverse industries. We specialize in future-oriented technologies, spanning
-                electrical, electronics, telecommunications, robotics, and IoT solutions. Committed to reshaping digital
-                landscapes, we propel industries forward through trans-formative advancements. At Teronics, driving
-                us to create impact solutions that redefine possibilities. We stand at the forefront, shaping tomorrow’s
-                technological evolution and empowering businesses with progressive digital solutions</p>
 
+            <!-- Games Section -->
+            <section id="games" class="mt-5">
+                <h2 class="text-center mt-5 mb-5" style="font-size: 3rem;">Our Games</h2>
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <a href="/hybridFarm" class="image-link" style ="text-decoration: none">
+                            <img src="static/gameimages/HybridFarmIcon.png" class="img-fluid" width="150" alt="Feature 1">
+                            <h4 class="mt-0 link-text  " style="color:rgb(80,80,80) ">Hybrid Farm</h4>
+                        </a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a href="/hybridFarm" class="image-link" style ="text-decoration: none">
+                            <img src="static/gameimages/HybridFarmIcon.png" class="img-fluid" width="150" alt="Feature 1">
+                            <h4 class="mt-0 link-text  " style="color:rgb(80,80,80) ">Hybrid Farm</h4>
+                        </a>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <a href="/hybridFarm" class="image-link" style ="text-decoration: none">
+                            <img src="static/gameimages/HybridFarmIcon.png" class="img-fluid" width="150" alt="Feature 1">
+                            <h4 class="mt-0 link-text  " style="color:rgb(80,80,80) ">Hybrid Farm</h4>
+                        </a>
+                    </div>
+                </div>
+            </section>
 
-            <h2 class="text-center mt-4 mb-4"> Open Positions</h2>
-           
-            <div> 
+            <!-- About Us Section -->
+            <section id="about" class="mt-5">
+                <h2 class="text-center" style="font-size: 2rem;">About Us</h2>
+                <p class="text-center">Stealth is a leading game development company specializing in creating immersive and engaging games for players worldwide. Our team of talented developers, designers, and storytellers are passionate about bringing unique gaming experiences to life.</p>
+            </section>
+
+            <!-- Contact Us & Careers -->
+            <!-- <section id="careers" class="text-center mt-5">
+                <a class="nav-link" href="/careers"> <button type="button" id="careers" class="btn btn-warning mt-2">Careers</button>   </a>
+
+            </section>  -->
+
+            <section id="contact" class="text-center mt-5">
+                <button type="button" id="contact" class="btn btn-primary btn-lg mt-2">Contact Us</button>
+            </section>  
+
+            <!-- Footer -->
+            <footer class="mt-4">
+                <div class="text-center">
+                    <p class="mt-2" >Copyright @2024, Stealth</p>
+
+                    <div class="margin-left:30px; mt-5">
+                    <a href="#" class="ml-3 " style ="text-decoration:none"  >Privacy Policy</a>
+                    <a href="#" class="ml-2" style ="text-decoration: none  ">Terms of Service</a>
+                    </div>
                 
-                
-                {%for job in jobs%}
-
-                {% include "jobitems.html" %}
-
-                {% endfor %}
-
-
-            </div>
-
-            <div class="text-center">
-            <button type="button" class="btn btn-primary btn-sm mt-2"> Contact Us </button>
-            <p class="mt-2"> Copyright @2024, Stealth <p>         
-            </div>
-            
+                    <div class="ml-3 mt-2 mb-3 text-decoration: none">
+                        <a href="#" class="mr-3 mb-3 " style ="text-decoration: none" >
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" width="20" alt="Facebook">
+                        </a>
+                        <a href="#" class="mr-3 mb-3 " style ="text-decoration: none">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Logo_of_Twitter.svg" width="20" alt="Twitter">
+                        </a>
+                        <a href="#" class="mr-3 mb-3 " style ="text-decoration: none">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" width="20" alt="Instagram">
+                        </a>
+                        <a href="#" class="mr-3 mb-3 " style ="text-decoration: none">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/LinkedIn_icon.svg" width="20" alt="LinkedIn">
+                        </a>
+                    </div>
+                    
+                    
+                </div>
+            </footer>
         </div>
         
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poTj8mvD9a/6G1p7igggHf5rf1whhh8/vHXQq2n5o/RRuuGqtKE" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-Qiuj1si0UQGCB5BFE8o6ddCrT8a5HkU5h60xopcr9Ex6J1ZhF3iX8smAu9WsL1Ww" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-vM9Er3ZLrVWkftkD28syOVucd1J/SXZ7+xA3a0xqvUN6y5z6mD6ypppV60y8CQ36" crossorigin="anonymous"></script>
     </body>
 </html>
