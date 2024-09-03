@@ -1,5 +1,7 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory,request, Response
 from flask import jsonify
+import os
+import requests
 
 app = Flask(__name__)
 
@@ -340,7 +342,7 @@ JOBS = [
 def renderCareerPage():
     return render_template("careers.html", jobs=JOBS, companyName="Stealth")
 
-@app.route("/")
+@app.route('/')
 def renderHome():
     return render_template("home.html", jobs=JOBS, companyName="Stealth")
 
@@ -348,9 +350,22 @@ def renderHome():
 def renderAboutHybridFarm():
     return render_template("hybridFarm.html", companyName="Stealth")
 
+@app.route("/hybridFarm/PlayhybridFarm")
+def playHybridFarm():
+    return render_template("index.html")
+
 # @app.route("/api/jobs")
 # def send_job():
 #     return jsonify(JOBS)
+
+
+
+
+
+
+
+
+
 
 
 if __name__ == "__main__":
