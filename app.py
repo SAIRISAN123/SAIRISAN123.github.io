@@ -335,9 +335,6 @@ JOBS = [
     }
 ]
 
-
-
-
 @app.route("/careers")
 def renderCareerPage():
     return render_template("careers.html", jobs=JOBS, companyName="Stealth")
@@ -357,14 +354,6 @@ def playHybridFarm():
 # @app.route("/api/jobs")
 # def send_job():
 #     return jsonify(JOBS)
-
-
-
-
-
-
-
-
 
 
 
